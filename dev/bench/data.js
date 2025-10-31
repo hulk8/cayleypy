@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761919299574,
+  "lastUpdate": 1761920262671,
   "repoUrl": "https://github.com/hulk8/cayleypy",
   "entries": {
     "Python Benchmark with pytest-benchmark": [
@@ -215,6 +215,49 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.04337670052466947",
             "extra": "mean: 1.8378404766000016 sec\nrounds: 5"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "khalturinmv@it.mos.ru",
+            "name": "Михаил Халтурин"
+          },
+          "committer": {
+            "email": "khalturinmv@it.mos.ru",
+            "name": "Михаил Халтурин"
+          },
+          "distinct": true,
+          "id": "574dc5947638cc96ae70f593e7485fd29d688786",
+          "message": "Use pytest marks and add benchmark jobs\n\n- Pytest runs now utilize marks for better test selection.\n- Benchmark jobs have been added to the CI pipeline.",
+          "timestamp": "2025-10-31T17:14:30+03:00",
+          "tree_id": "be8a7d3ab6183bc96a5d01d1aaf0a6d60205a891",
+          "url": "https://github.com/hulk8/cayleypy/commit/574dc5947638cc96ae70f593e7485fd29d688786"
+        },
+        "date": 1761920261955,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "cayleypy/cayley_graph_test.py::test_benchmark_top_spin[26-baseline]",
+            "value": 0.11886311205558552,
+            "unit": "iter/sec",
+            "range": "stddev: 2.1147365955678197",
+            "extra": "mean: 8.413039022000003 sec\nrounds: 5"
+          },
+          {
+            "name": "cayleypy/cayley_graph_test.py::test_benchmark_top_spin[26-bit_encoded]",
+            "value": 0.6076391524101763,
+            "unit": "iter/sec",
+            "range": "stddev: 0.007362195661281328",
+            "extra": "mean: 1.645713571999994 sec\nrounds: 5"
+          },
+          {
+            "name": "cayleypy/cayley_graph_test.py::test_benchmark_top_spin[26-bfs_numpy]",
+            "value": 0.4952326680276232,
+            "unit": "iter/sec",
+            "range": "stddev: 0.02439932586772362",
+            "extra": "mean: 2.019252897799993 sec\nrounds: 5"
           }
         ]
       }
