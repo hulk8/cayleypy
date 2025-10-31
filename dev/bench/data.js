@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1761920272973,
+  "lastUpdate": 1761921471361,
   "repoUrl": "https://github.com/hulk8/cayleypy",
   "entries": {
     "Python Benchmark with pytest-benchmark": [
@@ -430,6 +430,49 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.016357343076219156",
             "extra": "mean: 1.8428421785999944 sec\nrounds: 5"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "khalturinmv@it.mos.ru",
+            "name": "Михаил Халтурин"
+          },
+          "committer": {
+            "email": "khalturinmv@it.mos.ru",
+            "name": "Михаил Халтурин"
+          },
+          "distinct": true,
+          "id": "9516c3fc67a9ac009cb3adaa45c2a0df2482e78b",
+          "message": "Added directory creation on cache miss",
+          "timestamp": "2025-10-31T17:34:53+03:00",
+          "tree_id": "38637d7b2f09f85fc2ceab5bcd09d0aa050b07e5",
+          "url": "https://github.com/hulk8/cayleypy/commit/9516c3fc67a9ac009cb3adaa45c2a0df2482e78b"
+        },
+        "date": 1761921471054,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "cayleypy/cayley_graph_test.py::test_benchmark_top_spin[26-baseline]",
+            "value": 0.14601983535435162,
+            "unit": "iter/sec",
+            "range": "stddev: 0.06794714923232917",
+            "extra": "mean: 6.848384656600001 sec\nrounds: 5"
+          },
+          {
+            "name": "cayleypy/cayley_graph_test.py::test_benchmark_top_spin[26-bit_encoded]",
+            "value": 0.6065811055871858,
+            "unit": "iter/sec",
+            "range": "stddev: 0.008037183562716422",
+            "extra": "mean: 1.648584156000004 sec\nrounds: 5"
+          },
+          {
+            "name": "cayleypy/cayley_graph_test.py::test_benchmark_top_spin[26-bfs_numpy]",
+            "value": 0.5604378549508044,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0050098652440271245",
+            "extra": "mean: 1.7843191553999873 sec\nrounds: 5"
           }
         ]
       }
